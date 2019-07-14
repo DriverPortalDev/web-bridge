@@ -1,10 +1,10 @@
-from vibora import Vibora, Response
+from japronto import Application
 
-app = Vibora()
+def hello(request):
+    return request.Response(text='Hello world!')
 
-@app.route('/')
-async def home():
-    return Response(b'{"hello": "world"}', headers={'content-type': 'application/json'})
+app = Application()
 
-#if __name__ == '__main__':
-#    app.run(host="0.0.0.0", port=3000)
+app.router.add_route('/', hello)
+
+app.run(debug=True)
