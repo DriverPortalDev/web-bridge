@@ -6,5 +6,5 @@ app = Vibora()
 async def home():
     return Response(b'{"hello": "world"}', headers={'content-type': 'application/json'})
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=3000)
+#if __name__ == '__main__':
+#    app.run(host="0.0.0.0", port=3000)
