@@ -2,7 +2,6 @@ from vibora import Vibora, Response
 
 app = Vibora()
 
-
 @app.route('/')
 async def home():
     return Response(b'{"hello": "world"}', headers={'content-type': 'application/json'})
