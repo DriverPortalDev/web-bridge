@@ -11,8 +11,8 @@ class ThingsResource(object):
 
 class TestStuff(object):
     def on_get(self, req, resp):
-        get_os_value = json.dumps(str(os.environ))
-        resp.body = get_os_value
+        get_os_value = {'test': os.getenv('MY_VARIABLE', 'no_value')}
+        resp.body = json.dumps(get_os_value)
 
 
 # falcon.API instances are callable WSGI apps

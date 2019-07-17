@@ -11,5 +11,8 @@
             "src": "(.*)",
             "dest": "index.py"
         }
-    ]
+    ],
+    "env": [{
+        "MY_VARIABLE": "@acme-api-key"
+    }]
 }
