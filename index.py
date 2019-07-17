@@ -23,4 +23,4 @@ things = ThingsResource()
 
 # things will handle all requests to the '/' URL path
 app.add_route('/', things)
-app.add_route('/test_stuff', TestStuff())
+app.add_route('/test_stuff_2', TestStuff())
