@@ -11,7 +11,7 @@ class ThingsResource(object):
 
 class TestStuff(object):
     def on_get(self, req, resp):
-        get_os_value = {'test': os.getenv('MY_VARIABLE', 'no_value')}
+        get_os_value = {'test': os.getenv('MY_VARIABLE', 'no_value'), 'test_2': os.getenv('another_one', 'no_value')}
         resp.body = json.dumps(get_os_value)
 
 
