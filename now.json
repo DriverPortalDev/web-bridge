@@ -12,7 +12,7 @@
             "dest": "index.py"
         }
     ],
-    "env": [{
+    "env": {
         "MY_VARIABLE": "@acme-api-key"
-    }]
+    }
 }
