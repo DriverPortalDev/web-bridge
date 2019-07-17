@@ -7,6 +7,7 @@ class ThingsResource(object):
         resp.status = falcon.HTTP_200  # This is the default status
         resp.body = '{"hello":"world"}'
 
+
 # falcon.API instances are callable WSGI apps
 app = falcon.API()
 
